@@ -18,10 +18,25 @@ Segmentation fault
 
 ```
 
+- `dump` path will be created.
+```bash
+ls dump
+crash_20261123_163244.log 
+
+```
+
 <br />
 
 ## Analyze
 
+- `analyze_crash.py`
+```py
+# Default executable path (can be overridden with a command-line argument)
+DEFAULT_BIN = "/home/jaytwo/workspace/github/linux-cpp-crash-report/hello"
+
+```
+
+- Analyze
 ```bash
 $ chmod +x analyze_crash.py
 $ ./analyze_crash.py dump/crash_20261123_163244.log 

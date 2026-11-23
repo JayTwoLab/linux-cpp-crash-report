@@ -6,8 +6,7 @@ from pathlib import Path
 from typing import List, Optional, Tuple
 
 # Default executable path (can be overridden with a command-line argument)
-DEFAULT_BIN = "/home/jaytwo/workspace/coredump/hello"
-
+DEFAULT_BIN = "/home/jaytwo/workspace/github/linux-cpp-crash-report/hello"
 
 def parse_backtrace(log_path: Path) -> Tuple[List[str], List[Tuple[str, str]]]:
     """Extract metadata (headers) and binary addresses from the crash log."""
