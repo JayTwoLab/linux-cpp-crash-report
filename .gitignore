@@ -71,5 +71,6 @@ Testing/
 hello
 main.o
 dump/
+__pycache__/
 
 
