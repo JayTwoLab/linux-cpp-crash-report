@@ -1,6 +1,6 @@
 # linux-cpp-crash-report
 
-## 예제 빌드
+## Build
 
 ```
 make clean
@@ -10,7 +10,7 @@ make
 
 <br />
 
-## 예제 실행
+## Example
 
 ```
 ./hello
@@ -20,7 +20,7 @@ Segmentation fault
 
 <br />
 
-## 분석
+## Analyze
 
 ```
 chmod +x analyze_crash.py
