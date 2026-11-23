@@ -69,5 +69,7 @@ Testing/
 
 # executable files
 hello
+main.o
 dump/
+
 
