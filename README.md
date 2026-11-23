@@ -1,22 +1,40 @@
 # linux-cpp-crash-report
 
-## Build
+## Build example
 
+- Create crash program (`main.cpp`)
+```cpp
+namespace {
+    void trigger_crash() {
+        int* ptr = nullptr; // Initialize pointer to nullptr
+        *ptr = 10; // crashes the program because ptr is nullptr and dereferencing it is undefined behavior
+    }
+} // namespace
+```
+
+- Build example
 ```bash
 make clean
 make
+
+ls hello
+hello
 
 ```
 
 <br />
 
-## Example
+## Run example
 
+- Run `hello`
+   - `hello` is a **crashing** program.
 ```bash
 ./hello
 Segmentation fault
 
 ```
+
+<br />
 
 - `dump` path will be created.
 ```bash
@@ -36,7 +54,7 @@ DEFAULT_BIN = "/home/jaytwo/workspace/github/linux-cpp-crash-report/hello"
 
 ```
 
-- Analyze
+- analyze crash log
 ```bash
 $ chmod +x analyze_crash.py
 $ ./analyze_crash.py dump/crash_20261123_163244.log 
